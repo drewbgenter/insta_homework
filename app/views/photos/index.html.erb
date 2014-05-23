@@ -8,8 +8,7 @@
   <thead>
     <tr>
       <th>Photo</th>
-      <th>Image url</th>
-      <th>Source</th>
+      <th>Title</th>
       <th>User</th>
       <th></th>
       <th></th>
@@ -21,7 +20,6 @@
     <% @photos.each do |photo| %>
       <tr>
         <td><img src="<%= photo.image_url %>" width="320"></td>
-        <td><%= photo.image_url %></td>
         <td><%= photo.caption %></td>
         <td><%= photo.user_id %></td>
         <td>
