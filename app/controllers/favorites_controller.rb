@@ -7,6 +7,10 @@ class FavoritesController < ApplicationController
     @favorite = Favorite.find(params[:id])
   end
 
+  def favs
+    @favphotos = current_user.favorite_photos
+  end
+
   def new
     @favorite = Favorite.new
   end

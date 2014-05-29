@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # CREATE
   get('/favorites/new', { :controller => 'favorites', :action => 'new' })
   get('/create_favorite', { :controller => 'favorites', :action => 'create' })
+  get('/my_favorites', { :controller => 'favorites', :action => 'favs' })
 
   # READ
   get('/favorites', { :controller => 'favorites', :action => 'index' })
