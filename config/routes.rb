@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   devise_for :users
   root 'photos#index'
+
+  get('/wall', { :controller => 'wall', :action => 'show' })
   # Routes for the Favorite resource:
   # CREATE
   get('/favorites/new', { :controller => 'favorites', :action => 'new' })
